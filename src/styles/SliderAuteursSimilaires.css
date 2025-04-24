@@ -1,0 +1,35 @@
+/* Slider horizontal pour les auteurs similaires */
+.slider-auteurs-similaires {
+    margin-top: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-auteurs-similaires h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.slider-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;
+    scroll-behavior: smooth;
+    padding-bottom: 8px;
+}
+
+.slider-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.slider-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* Chaque carte garde une taille fixe pour défiler horizontalement */
+.slider-container>* {
+    flex: 0 0 220px;
+    max-width: 220px;
+}

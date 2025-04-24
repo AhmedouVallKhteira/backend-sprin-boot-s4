@@ -1,0 +1,14 @@
+.chart-prix-container {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.chart-prix-container h3 {
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+    color: #1f2937;
+}

@@ -1,0 +1,66 @@
+.auteur-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: 0.3s ease;
+    width: 220px;
+}
+
+.auteur-card:hover {
+    transform: translateY(-5px);
+}
+
+.auteur-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.note-stars {
+    margin: 8px 0;
+}
+
+.star {
+    font-size: 20px;
+    margin-right: 2px;
+}
+
+.star.full {
+    color: gold;
+}
+
+.star.half {
+    background: linear-gradient(90deg, gold 50%, #ccc 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.star.empty {
+    color: #ccc;
+}
+
+button {
+    background-color: #10b981;
+    color: white;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0e9e6e;
+}
+
+@media (max-width: 768px) {
+    .auteur-card {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}

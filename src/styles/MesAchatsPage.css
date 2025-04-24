@@ -1,0 +1,60 @@
+.mes-achats-page {
+    padding: 20px;
+}
+
+.tabs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.tabs button {
+    padding: 8px 16px;
+    background-color: #e5e7eb;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.tabs button.active {
+    background-color: #2563eb;
+    color: white;
+}
+
+.achats-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.filter-dates {
+    display: flex;
+    gap: 1rem;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.filter-dates label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #374151;
+}
+
+.filter-dates input {
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    margin-top: 4px;
+    background-color: white;
+    outline: none;
+    min-width: 160px;
+}
+
+.filter-dates input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 1px #2563eb;
+}

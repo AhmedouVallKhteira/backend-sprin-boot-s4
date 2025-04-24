@@ -1,0 +1,106 @@
+/* AjouterAuteur.css */
+
+.ajouter-auteur-page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9fafb;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ajouter-auteur-page h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #1f2937;
+    font-weight: bold;
+    text-align: center;
+}
+
+.ajouter-auteur-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.ajouter-auteur-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: #374151;
+    font-size: 0.95rem;
+}
+
+.ajouter-auteur-form input,
+.ajouter-auteur-form textarea {
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    margin-top: 0.25rem;
+    background-color: white;
+    outline: none;
+}
+
+.ajouter-auteur-form input:focus,
+.ajouter-auteur-form textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 1px #2563eb;
+}
+
+.ajouter-auteur-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.btn-submit {
+    background-color: #2563eb;
+    color: white;
+    font-weight: 600;
+    padding: 0.65rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: #1e40af;
+}
+
+.btn-cancel {
+    background-color: #9ca3af;
+    color: white;
+    font-weight: 600;
+    padding: 0.65rem 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-cancel:hover {
+    background-color: #6b7280;
+}
+
+@media (max-width: 768px) {
+    .ajouter-auteur-page {
+        padding: 1rem;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-submit,
+    .btn-cancel {
+        width: 100%;
+    }
+}
