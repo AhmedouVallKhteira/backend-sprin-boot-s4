@@ -28,10 +28,19 @@ export default function LivreDetailPage(): React.ReactElement {
         .get(`/livres/${id}`)
         .then((res) => setLivre(res.data))
         .catch((err) => {
-          console.error("Erreur de chargement du livre:", err);
+          // Récupérer le message d'erreur de la réponse backend ou utiliser un fallback
+          const errorMessage =
+            err.response?.data?.message || // message renvoyé par le backend
+            err.message ||                 // message général de Axios
+            "Erreur inconnue lors du chargement du livre.";
+    
+          console.error("Erreur de chargement du livre:", errorMessage);
+    
+    
           navigate("/dashboard/livres");
         });
     }
+    
   }, [id]);
 
   const handleDelete = async () => {
